@@ -7,10 +7,10 @@ var express = require('express'),
 var db;
 
 if (process.env.ENV === 'Test') {
-    db = mongoose.connect('mongodb://localhost:27016/bookAPI_test');
+    db = mongoose.connect('mongodb://localhost:27017/bookAPI_test');
 }
 else {
-    db = mongoose.connect('mongodb://localhost:27016/bookapi');
+    db = mongoose.connect('mongodb://localhost:27017/bookapi');
 }
 
 var app = express();
