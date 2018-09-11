@@ -18,11 +18,11 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
-  artifacts:
-    files:
-      - app.js
-      - gulpfile.js
-      - package.json
-      - controllers/*
-      - models/*
-      - Routes/*
+artifacts:
+  files:
+    - app.js
+    - gulpfile.js
+    - package.json
+    - controllers/*
+    - models/*
+    - Routes/*
